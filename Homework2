@@ -1,1 +1,44 @@
+Sub total()
+
+    Dim Ticker As String
+    Dim Volume As Double
+    Dim LastRow As Long
+    Dim stockopen As Double
+    Dim stockclose As Double
+    Dim Decrease As Integer
+    Dim Increase As Integer
+
+    LastRow = Cells(Rows.Count, 1).End(xlUp).Row
+    Row = 2
+
+
+    Cells(1, 9).Value = "<Ticker>"
+    Cells(1, 10).Value = "<Open>"
+    Cells(1, 11).Value = "<Close>"
+    Cells(1, 12).Value = "<Change>"
+    Cells(1, 13).Value = "<Percent Change>"
+    Cells(1, 14).Value = "<Total Stock>"
+
+    Cells(2, 10).Value = Cells(2, 3).Value
+
+    For i = 2 To LastRow
+    If Cells(i + 1, 1).Value <> Cells(i, 1).Value Then
+    Ticker = Cells(i, 1).Value
+    Volume = Volume + Cells(i, 7).Value
+
+    Range("I" & Row).Value = Ticker
+    Range("N" & Row).Value = Volume
+    Row = Row + 1
+    Volume = 0
+    
+    Else
+    Volume = Volume + Cells(i, 7).Value
+    
+    End If
+
+    Next i
+    
+    End Sub
+
+
 
