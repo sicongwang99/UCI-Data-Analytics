@@ -1,0 +1,48 @@
+import os
+import csv
+
+    total_months = []
+    total_revenue = []
+    total=[]
+    difference = []
+    average_revenue_change = []
+    totalDifference = []
+    greatest_increase_in_revenue = []
+    greatest_decrease_in_revenue = []
+    months = []
+
+    csvpath = os.path.join('..','raw_data','budget_data.csv')
+    with open(csvpath,newline="")as csvfile:
+        
+        csvreader = csv.reader(csvfile, delimiter=',')
+        totalRevenue = 0
+        avg_change =0
+
+        for row in csvreader:
+            total_months.append(row[0])
+            totalRevenue += int(row[1])
+            total.append(row[1])
+        totalMonths = len(total_months) #Total amount of months
+        months.append(totalMonths)
+
+
+        for i in range(int(len(total))-1):
+            D = int(total[i+1])-int(total[i]) #D is the difference of each 2 numbers in the total list
+            totalDifference.append(D)#add D values to totalDifference list
+        average_revenue_change.append(round(mean(totalDifference)) ) #calculated mean for the revenue change
+        greatest_increase_in_revenue.append(max(totalDifference)) #greatest increase revenue
+        greatest_increase_date = total_months[int(totalDifference.index(max(totalDifference)))+1]
+        greatest_decrease_in_revenue.append(min(totalDifference)) #greatest decrease revenue
+        greatest_decrease_date = total_months[int(totalDifference.index(min(totalDifference)))+1]
+        total_revenue.append(totalRevenue)
+
+        print("Budget_data Financial Analysis")
+        print("--------------------------------")
+        print("Total Months: ".format(totalMonths))
+        print("Total Revenue: $".format(total_revenue[0]))
+        print("Average Revenue Change: $".format(average_revenue_change[0]))
+        print("Greatest Increase in Revenue:  ($)".format(greatest_increase_date,
+                                                              greatest_increase_in_revenue[0]))
+        print("Greatest Decrease in Revenue:  ($)".format(greatest_decrease_date,
+                                                              greatest_decrease_in_revenue[0]))
+
