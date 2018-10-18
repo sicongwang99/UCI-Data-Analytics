@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeatherPy</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="background-color: lightgray;">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+            
+                <a class="navbar-brand" href="index.html" style="color: white; background-color: rgb(11,192,192); font-size: 20pt;">
+                    <span class="nav-color">Latitude</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Temperature.html">Temperature</a></li>
+                            <li><a href="Humidity.html">Humidity</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="Wind_speed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparisons.html">Comparisons</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <span class="col-lg-1"></span>
+            <div class="col-lg-10">
+                <div class="panel panel-default">
+                    <div class="panel-body" style="height:100%">
+                        <div class="row"><h2 class="col-lg-12" style="color: rgb(11,192,192);left: 20px;">Comparison: Latitude vs X</h2></div>
+                        <hr>
+                        <div class="row"><p style="left: 20px;" class="col-lg-12">Click any plot get an in-depth analysis</p></div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 style="text-align: center; color: rgb(11, 192, 192);">vs. Max Temperature</h3>
+                                <a href="Temperature.html">
+                                    <img style="width: 100%;" src ="output_images/temperature.png" alt ="Latitude vs. Temperature" >
+                                </a>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 style="text-align: center; color: rgb(11, 192, 192);">vs. Humidity</h3>
+                                <a href="Humidity.html">
+                                    <img style="width: 100%;" src="output_images/humidity.png" alt ="Latitude vs. Humidity">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 style="text-align: center;color: rgb(11, 192, 192); ">vs. Cloudiness</h3>
+                                <a href="cloudiness.html">
+                                    <img style="width: 100%;" src ="output_images/cloudiness.png" alt ="Latitude vs. Cloudiness">
+                                </a>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <h3 style="text-align: center;color: rgb(11, 192, 192); ">vs. Wind Speed</h3>
+                                <a href="Wind_speed.html">
+                                    <img style="width: 100%; " src ="output_images/wind_speed.png" alt ="Latitude vs. Wind Speed">
+                                </a>
+                            </div>  
+                            
+                        </div>
+                    </div>    
+                </div> 
+            </div>
+            <div class="col-lg-1"></div>      
+        </div>
+    </div>
+    <footer class="page-footer font-small blue pt-4 mt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row" style="background-color: rgb(11, 192, 192);padding:10px;"></div>
+        </div>
+        <div class="footer-copyright py-3 text-center" style="background-color: grey; padding:0.5%; color: white;">
+            © Copyright Coding Bootcamp 2018
+        </div>
+        
+    </footer> 
+
+    
+</body>
+</html>
