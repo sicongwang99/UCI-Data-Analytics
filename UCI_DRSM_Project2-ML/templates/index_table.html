@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Data Analytics Jobs!</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="http://127.0.0.1:5000">Drishti, Mark, Richa and Sicong</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="http://127.0.0.1:5000">Home</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Visualizations
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  
+                  <li><a href="http://127.0.0.1:5000/map">Map</a></li>
+                  <li><a href="http://127.0.0.1:5000/charts">Charts</a></li>
+                  
+                </ul>
+              </li>
+            <li><a href="http://127.0.0.1:5000/table">Data Table</a></li>
+            <li><a href="https://goo.gl/t97dU2" target="_blank">Glassdoor</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="https://www.amazon.com/s?k=free&ref=nb_sb_noss_2"><span class="glyphicon glyphicon-user"></span> Sign Up For Free Amazon packages!</a></li> -->
+            
+          </ul>
+        </div>
+      </nav>
+  <div class="container text-center">
+    <h1 class="jumbotron">Job Listings</h1>
+    <div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="stockInput">Search for Jobs: Company, position, location or salary (in 000s)</label>
+                    <input type="text" class="form-control" id="companyInput" name="company" placeholder="Enter search here">
+                  </div>
+                  <button id="filter-btn" type="submit" class="btn btn-primary btn-md">Search</button>
+                </form>
+                
+                <table class="myTable" id ="mytable">
+                    <thead>
+                        
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+      <!-- <ul style="list-style: none;">
+        {% for job in jobs %}
+          <li>{{ job.Company }} - {{ job.Title }}: {{ job.City }}, {{ job.State }}</li>
+        {% endfor %}
+      </ul> -->
+    </div>
+      <!-- <form class="form-inline" method="POST" action="/send"> -->
+    
+  <div id="plot"></div>
+  <div id="map"></div>
+  <!-- D3 JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <!-- Plotly JavaScript -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+  <!-- API Key for GeoJSONMap -->
+  <script type="text/javascript" src="static/js/config.js"></script>
+  <script type="text/javascript" src="static/js/table.js"></script>
+  <script type="text/javascript" src="static/js/require.js"></script>
+  <!-- Javascript -->
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+
+</html>

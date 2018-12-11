@@ -1,0 +1,224 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* The footer is positioned at the bottom of the page */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100px;
+  background: #4e5d6c;
+}
+
+.navbar {
+  padding: 5px;
+  margin: 0;
+}
+/* 
+/* input placeholder color changes */
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8e979f;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8e979f;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8e979f;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8e979f;
+}
+
+
+
+#map-id {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.legend {
+ background-color: white;
+ width: 100px;
+ /*margin-left: 2%;*/ 
+ font-size: 12px;
+ border-color: black;
+ border-radius: 5px;
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.legend ul {
+  padding: 5%;
+  margin: 0;
+  clear: both;
+  list-style-type: none;
+}
+.legend li {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 5px;
+  width: 22px;
+  height: 22px;
+}
+
+/* #table-area th {
+  text-align: center;
+}
+
+
+#table-area tbody td {
+  display: block;
+  text-align: center;
+}
+
+#table-area tbody td::before {
+  display: block;
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  content: attr(data-th);
+}
+#table-area tr td:last-child::after {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  content: " ";
+  background: aliceblue;
+} */ */
+table.myTable {
+  table-layout: auto;
+  border: 1px solid #1C6EA4;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 200%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.myTable td, table.myTable th {
+  border: 1px solid #E9E9E9;
+  padding: 3px 2px;
+}
+table.myTable tbody td {
+  font-size: 13px;
+}
+table.myTable thead {
+  background: #FFFFFF;
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+  /* border-bottom: 2px solid #444444; */
+}
+table.myTable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #040404;
+  text-align: center;
+}
+table.myTable tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #040404;
+  background: #FFFFFF;
+  background: -moz-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+  background: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 66%, #FFFFFF 100%);
+  border-top: 2px solid #444444;
+}
+table.myTable tfoot td {
+  font-size: 14px;
+}
+/* 
+
+table.mytable {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table.mytable td, table.mytable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.mytable tbody td {
+  font-size: 13px;
+}
+table.mytable thead {
+  background: #F7FAFC;
+  background: -moz-linear-gradient(top, #f9fbfd 0%, #f7fafc 66%, #F7FAFC 100%);
+  background: -webkit-linear-gradient(top, #f9fbfd 0%, #f7fafc 66%, #F7FAFC 100%);
+  background: linear-gradient(to bottom, #f9fbfd 0%, #f7fafc 66%, #F7FAFC 100%);
+  border-bottom: 2px solid #444444;
+}
+table.mytable thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #050505;
+  text-align: left;
+  border-left: 2px solid #000000;
+}
+table.mytable thead th:first-child {
+  border-left: none;
+}
+
+table.mytable tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background: #D0E4F5;
+  background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top: 2px solid #444444;
+}
+table.mytable tfoot td {
+  font-size: 14px;
+}
+table.mytable tfoot .links {
+  text-align: right;
+}
+table.mytable tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+} */
+
+
+
+
+/* media queries which will only be activated at specific screen sizes */
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 500px) {
+ 
+}
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 7.5rem;
+    opacity: 1;
+  }
+}
+

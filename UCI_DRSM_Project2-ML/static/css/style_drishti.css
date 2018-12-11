@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* The footer is positioned at the bottom of the page */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100px;
+  background: #4e5d6c;
+}
+
+.navbar {
+  padding: 5px;
+  margin: 0;
+}
+
+/* input placeholder color changes */
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8e979f;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8e979f;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8e979f;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8e979f;
+}
+
+#map-id {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.legend {
+ background-color: white;
+ width: 100px;
+ /*margin-left: 2%;*/ 
+ font-size: 12px;
+ border-color: black;
+ border-radius: 5px;
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.legend ul {
+  padding: 5%;
+  margin: 0;
+  clear: both;
+  list-style-type: none;
+}
+.legend li {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 5px;
+  width: 22px;
+  height: 22px;
+}
+
+canvas {
+  background-color: white;
+  padding: 20px;
+}
+
+/* media queries which will only be activated at specific screen sizes */
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 500px) {
+ 
+}
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 7.5rem;
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data jobs map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="http-equiv" content="Content-type: text/html; charset=UTF-8"/>
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+
+    <!-- Leaflet CSS & JS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--D3 cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+    <!-- Marker Cluster JS & CSS -->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="static/css/leaflet.label.css" />
+    <link rel="stylesheet" href="static/css/screen.css" />
+
+</head>
+
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <a class="navbar-brand" href="http://127.0.0.1:5000">Drishti, Mark, Richa and Sicong</a>
+                  </div>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="http://127.0.0.1:5000">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Visualizations
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          
+                          <li><a href="http://127.0.0.1:5000/map">Map</a></li>
+                          <li><a href="http://127.0.0.1:5000/charts">Charts</a></li>
+                          
+                        </ul>
+                      </li>
+                    
+                    <li><a href="http://127.0.0.1:5000/table">Data Table</a></li>
+                    <li><a href="https://goo.gl/t97dU2 " target="_blank" >Glassdoor</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <!-- <li><a href="https://www.amazon.com/s?k=free&ref=nb_sb_noss_2"><span class="glyphicon glyphicon-user"></span> Sign Up For Free Amazon packages!</a></li> -->
+                    
+                  </ul>
+                </div>
+              </nav>
+
+<div id="map"></div>
+
+</div>
+
+    <script src="https://unpkg.com/jquery@3.3.1/dist/jquery.js"></script>
+    <script type="text/javascript" src="static/js/leaflet.label.js"></script>
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <script src="{{ url_for('static', filename='js/app_sicong.js') }}"></script>
+
+</body>
+</html>
